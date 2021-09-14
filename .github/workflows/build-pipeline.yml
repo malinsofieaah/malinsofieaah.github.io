@@ -25,7 +25,7 @@ jobs:
       - name: Run styles lint and format check
         run: npm run lint:css
       - name: "Hello brah, sup?"
-        run: alert "yo, $NAME"
+        run: echo "yo, $NAME"
         env:
           NAME: Alex
 
