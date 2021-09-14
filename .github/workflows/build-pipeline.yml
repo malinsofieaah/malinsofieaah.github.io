@@ -24,6 +24,15 @@ jobs:
         run: npm run lint:ts
       - name: Run styles lint and format check
         run: npm run lint:css
+        
+  hello_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Hello brah, sup?"
+        run: alert "yo, $NAME"
+        env:
+          NAME: Alex
+  
 
   deploy:
     needs: build
