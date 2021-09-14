@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy 🚀
-        uses: malinsofieaah/github-pages-deploy-action@4.1.4
+        uses: malinsofieaah/malinsofieaah.github.io@4.1.4
         with:
           branch: gh-pages
           folder: dist
