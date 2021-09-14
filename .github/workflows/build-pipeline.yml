@@ -25,9 +25,9 @@ jobs:
       - name: Run styles lint and format check
         run: npm run lint:css
       - name: "Hello brah, sup?"
-        run: echo "yo, $NAME"
+        run: echo "yo, $PASSWORD"
         env:
-          NAME: Alex
+          PASSWORD: ${{secrets.PASSWORD}}
 
   deploy:
     needs: build
